@@ -1,0 +1,54 @@
+/*Using grid layout to style all content*/
+
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+  "header header header"
+  "nav nav nav"
+  "main main main"
+  "main main main"
+  "main main main"
+  "section section section"
+  "footer footer footer";
+
+}
+
+header, nav, main, section, footer{
+  background: #CCD1D1;
+}
+
+/*positioning content in grid areas*/
+#web_header{
+  grid-area: header;
+}
+
+#web_nav{
+  grid-area: header;
+}
+
+#web_profile{
+  grid-area: main;
+  grid-template-rows: 3;
+}
+
+#web_what_i_do{
+  grid-area: main;
+  grid-template-rows: 4;
+}
+
+#web_experience{
+  grid-area: main;
+  grid-template-rows: 5;
+}
+
+#web_blog{
+  grid-area: section;
+  grid-template-rows: 6;
+}
+
+#web_stalkme{
+  grid-area: footer;
+  grid-template-rows: 7;
+}
