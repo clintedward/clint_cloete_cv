@@ -1,56 +1,145 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- A simple, clean and minimalist greyscale web CV -->
-    <!-- Chosen to use html semantics for search engines to easily identify the correct webpage content. -->
+
+<head>
+  <!-- A simple, clean and minimalist greyscale (mobile first) web CV -->
+  <!-- Chosen to use html semantics for search engines to easily identify the correct webpage content. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-AU-Compatable" content="ie=edge">
+  <!-- these tags are to assist SEO. Need to add more info -->
+  <meta name="author" content="Clint Cloete">
+  <meta name="description" content="CV or remume of Clint Cloete">
+  <meta name="keywords" content="clint cloete, cloete, web developer, front end web developer, web development">
+  <link rel="shortcut icon" href="/8f80f5ba.favicon.ico">
+  <title>Clint Cloete - Curriculum Vitae - Front End Web Developer</title>
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
 
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- HEADER -->
+  <header id="showcase" class="grid">
 
-    <!-- these tags are to assist SEO. Need to add more info -->
-    <meta name="author" content="Clint Cloete">
-    <meta name="description" content="CV or remume of Clint Cloete">
-    <meta name="keywords" content="clint cloete, cloete, web developer, front end web developer, web development">
-    <link rel="icon" href="/favicon.ico">
+      <nav class="navbar">
+        <ul>
+          <li> <a href="#">Intro</a></li>
+          <li> <a href="#">Portfolio</a></li>
+          <li> <a href="#">Experience</a></li>
+          <li> <a href="#">Contact</a></li>
+          <!--NOTE!! put this in section D -->
+          <!-- <li> <a class="active" href="#">Download</a></li> -->
+        </ul>
+      </nav>
 
-    <title>Clint Cloete - Curriculum Vitae - Front End Web Developer</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- div to attached opacity, bg-img and properties -->
+    <div class="bg-image"></div>
+      <div class="content-wrap">
+        <h1 style="background-color: #0000004d; ">HELLO, I'M CLINT</h1>
+        <p>AN ASPIRING WEB DEVELOPER</p>
 
-
-  </head>
-  <body>
-
-    <!-- Add high quality image(snow peak mountains) with hamburger navbar - for clean user interface -->
-    <header id="web_header">Hello, I'm Clint
-      <nav id="web_nav"></nav>
-      <img src="" alt="">
-      <p>An Aspiring Web Developer</p>
-    </header>
-
-    <!-- Add profile image of myself. Introduction of who I am, with a link to my personal development blog - my learning journey with CodeSpace. -->
-    <main id="web_profile"></main>
-
-
-    <!-- A four quadrant row/column with icons and a brief description of what I do. -->
-    <main id="web_what_i_do">what I do</main>
+      <!-- Animation button -->
+      <div class="content-wrap">
+        <a href="#section-b" style="text-decoration:none;"><div class="pulse">Scroll down</div></a>
+      </div>
 
 
-    <!-- A list of experience/capabilities. -->
-    <main id="web_experience">Experience/I've worked with</main>
+  </header>
+
+  <!-- MAIN AREA -->
+  <main id="main">
+    <!-- Section A -->
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Who am I</h2>
+        <div class="content-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <img src="img/road.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">lorem</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="img/road.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">lorem</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="img/road.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">lorem</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- Section C -->
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Experience</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+
+    <!-- Section D -->
+    <section id="section-d" class="grid">
+      <div class="box">
+        <h2 class="content-title">Stalk Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>clintedward86@icloud.com</p>
+      </div>
+      <div class="box">
+        <h2 class="content-title">Stalk Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>clintedward86@icloud.com</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="grid">
+    <div>lorem whowhowhwowhwowhwowhwowhwowh</div>
+    <div>See my projects <a href="#" target="_blank">github</a> </div>
+  </footer>
 
 
-    <!-- See my Blog: Showing my learning path from the important challenges; tech industry standards; command line & github setup; professional development; etc. -->
-    <section id="web_blog">See my Blog</section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).on('scroll', function(){
+      if($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+      else{
+        $('nav').removeClass('black');
+      }
+    });
+  </script>
+</body>
 
-
-    <!-- Links to github, email and linkedin. -->
-    <footer id="web_stalkme">Stalk me</footer>
-
-
-
-
-
-
-  </body>
 </html>

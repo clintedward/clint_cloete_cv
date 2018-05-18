@@ -1,0 +1,287 @@
+/*CORE STYLE*/
+
+$primary-color: #333;
+$secondary-color: #fff;
+
+body{
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: $primary-color;
+  color: $secondary-color;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+
+/*this setting fits images into the block*/
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3{
+  margin: 0;
+  padding: 1em 0;
+}
+
+p{
+  margin: 0;
+  padding:1em 0;
+  letter-spacing: 8px;
+}
+
+.btn{
+  display: inline-block;
+  background: $primary-color;
+  color: $secondary-color;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
+}
+
+.btn:hover{
+  background: #eaeaea;
+  color: $primary-color;
+}
+
+/*NAVBAR*/
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+nav.black{
+  background: rgba(0,0,0,0.8);
+  height: 100px;
+  padding: 10px 100px;
+
+}
+
+// nav .logo{
+//   padding: 22px 20px;
+//   height: 80px;
+//   float: left;
+//   font-size: 24px;
+//   transition: .3s;
+// }
+
+nav.black .logo{
+  color: #fff;
+}
+
+nav ul{
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a{
+  line-height: 80px;
+  color: #c3c3c3;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+nav.black ul li a{
+  color: $secondary-color;
+}
+
+nav ul li a:focus{
+  outline: none;
+}
+
+nav ul li a.active{
+  background: #E2472F;
+  color: $secondary-color;
+  border-radius: 6px;
+}
+
+// /*HEADER SHOWCASE*/
+#showcase{
+  min-height: 47em;
+  color: $secondary-color;
+  text-align: center;
+}
+//
+#showcase .bg-image{
+  position: absolute;
+  background: $primary-color url('../img/drkmountain.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 47em;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#showcase h1{
+  padding-top: 10em;
+  // padding-bottom: 0;
+  letter-spacing: 30px;
+  // margin-top: 0em;
+}
+
+#showcase .content-wrap, #section-a .content-wrap{
+  padding: 0 1.5em;
+}
+
+
+
+/*PULSE ANIMATION*/
+// .center{
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+
+.pulse{
+  // position: relative;
+  // left: 20px;
+  width: 100px;
+  height: 100px;
+  background: #ff6d4a;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  animation: animate 3s linear infinite;
+
+}
+
+@keyframes animate{
+  0%
+  {
+    box-shadow: 0 0 0 0 rgba(255,109,74,.7), 0 0 0 0 rgba(255,109,74,.7);
+  }
+  40%
+  {
+    box-shadow: 0 0 0 30px rgba(255,109,74,0), 0 0 0 0 rgba(255,109,74,.7);
+  }
+  80%
+  {
+    box-shadow: 0 0 0 30px rgba(255,109,74,0), 0 0 0 20px rgba(255,109,74,0);
+  }
+  100%
+  {
+    box-shadow: 0 0 0 0 rgba(255,109,74,0), 0 0 0 20px rgba(255,109,74,0);
+  }
+}
+
+/*SECTION A*/
+#section-a{
+  background: #eaeaea;
+  color: $primary-color;
+  padding-bottom: 2em;
+}
+
+/*SECTION B*/
+#section-b{
+  padding: 2em 1em 1em;
+}
+
+#section-b{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    margin-bottom: 1em;
+    background: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.card-content{
+  padding: 1.5em;
+}
+
+/*SECTION C*/
+#section-c{
+  background: $secondary-color;
+  color: $primary-color;
+  padding: 2em;
+}
+
+/*SECTION D/BOXES*/
+
+#section-d .box{
+  padding: 2em;
+  color: $secondary-color;
+}
+
+#section-d .box:first-child{
+  background: #2690d4;
+}
+
+/*FOOTER*/
+
+#main-footer{
+  padding: 2em;
+  background: #000;
+  color: $secondary-color;
+  text-align: center;
+}
+
+#main-footer a{
+  color: #2690d4;
+  text-decoration: none;
+}
+
+/*MEDIA QUERY*/
+
+@media(min-width: 700px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a {
+    .content.text{
+      columns: 2;
+      column-gap: 2em;
+    }
+    p{
+      padding-top: 0;
+    }
+  }
+
+  .content-wrap,
+  #section-b ul{
+    grid-column: 2/4;
+  }
+  .box, #main-footer div{
+    grid-column: span 2;
+    column-gap: 2em;
+  }
+
+  #section-b{
+    ul{
+      display: flex;
+    }
+  }
+}
