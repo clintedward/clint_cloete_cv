@@ -18,10 +18,3 @@ $(document).ready(function(){function menu(){
 }
 menu();
 });
-
-
-// .content-wrap h1{
-//   position: relative;
-//   top: 5em;
-//   letter-spacing: 30px;
-// }

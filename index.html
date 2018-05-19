@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="/8f80f5ba.favicon.ico">
   <title>Clint Cloete - Curriculum Vitae - Front End Web Developer</title>
   <link rel="stylesheet" href="css/input.css">
-  <link rel="stylesheet" href="">
+
   <!-- FONT -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,10 +30,10 @@
 
       <nav class="navs">
         <ul>
-          <li> <a href="#">Intro</a></li>
-          <li> <a href="#">Portfolio</a></li>
-          <li> <a href="#">Experience</a></li>
-          <li> <a href="#">Contact</a></li>
+          <li> <a href="#section-a" class="smoothScroll">Intro</a></li>
+          <li> <a href="#section-b" class="smoothScroll">Portfolio</a></li>
+          <li> <a href="#section-c" class="smoothScroll">Experience</a></li>
+          <li> <a href="#main-footer" class="smoothScroll">Contact</a></li>
           <!--NOTE!! put this in section D -->
           <!-- <li> <a class="active" href="#">Download</a></li> -->
         </ul>
@@ -48,7 +48,7 @@
 
       <!-- Animation button -->
 
-        <a href="#section-b" style="text-decoration:none;"><div class="pulse">Scroll down</div></a>
+        <a href="#section-a" style="text-decoration:none;"><div class="pulse">Scroll down</div></a>
       </div>
 
 
@@ -129,7 +129,7 @@
     <div>See my projects <a href="#" target="_blank">github</a> </div>
   </footer>
 
-
+  <script src="javascript/smoothscroll.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(window).on('scroll', function(){
