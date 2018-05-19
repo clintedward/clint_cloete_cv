@@ -24,14 +24,10 @@ img{
 
 h1, h2, h3{
   margin: 0;
-  padding: 1em 0;
+  padding: 0em;
 }
 
-p{
-  margin: 0;
-  padding:1em 0;
-  letter-spacing: 8px;
-}
+
 
 .btn{
   display: inline-block;
@@ -53,27 +49,28 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  width: auto;
+  width: 100%;
   height: 100px;
   padding: 10px 100px;
   box-sizing: border-box;
   transition: .3s;
+  z-index: 1;
 }
 
 nav.black{
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
   height: 100px;
   padding: 10px 100px;
 
 }
 
-// nav .logo{
-//   padding: 22px 20px;
-//   height: 80px;
-//   float: left;
-//   font-size: 24px;
-//   transition: .3s;
-// }
+nav .logo{
+  padding: 22px 20px;
+  height: 80px;
+  float: left;
+  font-size: 24px;
+  transition: .3s;
+}
 
 nav.black .logo{
   color: #fff;
@@ -133,16 +130,71 @@ nav ul li a.active{
   opacity: 0.7;
 }
 
-#showcase h1{
-  padding-top: 10em;
-  // padding-bottom: 0;
-  letter-spacing: 30px;
-  // margin-top: 0em;
+  .content-wrap{
+    position: relative;
+    top: 12em;
+  }
+
+
+  h1{
+    position: relative;
+    padding-top: 0px;
+    top: 0em;
+    letter-spacing: 30px;
+  }
+
+  p{
+    margin: 0;
+    padding:1em 0;
+    position: relative;
+    top: 0em;
+    letter-spacing: 8px;
+  }
+
+  .pulse{
+    position: relative;
+    left: 12em;
+    top: 15em;
+    width: 100px;
+    height: 100px;
+    background: #ff6d4a;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    animation: animate 3s linear infinite;
+
+  }
+
+  @keyframes animate{
+    0%
+    {
+      box-shadow: 0 0 0 0 rgba(255,109,74,.7), 0 0 0 0 rgba(255,109,74,.7);
+    }
+    40%
+    {
+      box-shadow: 0 0 0 30px rgba(255,109,74,0), 0 0 0 0 rgba(255,109,74,.7);
+    }
+    80%
+    {
+      box-shadow: 0 0 0 30px rgba(255,109,74,0), 0 0 0 20px rgba(255,109,74,0);
+    }
+    100%
+    {
+      box-shadow: 0 0 0 0 rgba(255,109,74,0), 0 0 0 20px rgba(255,109,74,0);
+    }
+  }
+
+  #showcase .content-wrap, #section-a .content-wrap{
+    padding: 0 1.5em;
+    padding-bottom: 25em;
+
 }
 
-#showcase .content-wrap, #section-a .content-wrap{
-  padding: 0 1.5em;
-}
+
 
 
 
@@ -155,41 +207,7 @@ nav ul li a.active{
 // }
 
 
-.pulse{
-  // position: relative;
-  // left: 20px;
-  width: 100px;
-  height: 100px;
-  background: #ff6d4a;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 10px;
-  text-align: center;
-  line-height: 100px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  animation: animate 3s linear infinite;
 
-}
-
-@keyframes animate{
-  0%
-  {
-    box-shadow: 0 0 0 0 rgba(255,109,74,.7), 0 0 0 0 rgba(255,109,74,.7);
-  }
-  40%
-  {
-    box-shadow: 0 0 0 30px rgba(255,109,74,0), 0 0 0 0 rgba(255,109,74,.7);
-  }
-  80%
-  {
-    box-shadow: 0 0 0 30px rgba(255,109,74,0), 0 0 0 20px rgba(255,109,74,0);
-  }
-  100%
-  {
-    box-shadow: 0 0 0 0 rgba(255,109,74,0), 0 0 0 20px rgba(255,109,74,0);
-  }
-}
 
 /*SECTION A*/
 #section-a{
@@ -260,6 +278,11 @@ nav ul li a.active{
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
 
+  .pulse{
+    left: 34em;
+    top: 27em;
+  }
+
   #section-a {
     .content.text{
       columns: 2;
@@ -268,11 +291,14 @@ nav ul li a.active{
     p{
       padding-top: 0;
     }
+
   }
 
   .content-wrap,
   #section-b ul{
     grid-column: 2/4;
+    position: relative;
+    top: 17em;
   }
   .box, #main-footer div{
     grid-column: span 2;

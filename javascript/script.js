@@ -2,7 +2,7 @@
 $(document).ready(function(){function menu(){
   var menu = document.querySelector(".menu");
   var links = document.querySelector(".links");
-  
+
 
 
   menu.addEventListener("click",function(e){
@@ -18,3 +18,10 @@ $(document).ready(function(){function menu(){
 }
 menu();
 });
+
+
+// .content-wrap h1{
+//   position: relative;
+//   top: 5em;
+//   letter-spacing: 30px;
+// }
