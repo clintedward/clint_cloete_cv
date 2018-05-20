@@ -24,7 +24,7 @@ img{
 
 h1, h2, h3{
   margin: 0;
-  padding: 0em;
+  padding: 1em;
 }
 
 
@@ -130,31 +130,52 @@ nav ul li a.active{
   opacity: 0.7;
 }
 
-  .content-wrap{
-    position: relative;
-    top: 12em;
-  }
+  // .content-wrap{
+  //   position: relative;
+  //   top: 2em;
+  // }
 
 
   h1{
     position: relative;
     padding-top: 0px;
-    top: 0em;
+    top: 5em;
     letter-spacing: 30px;
+  }
+
+  #h1-header{
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    top: 7em;
+    letter-spacing: 30px;
+  }
+
+  #p-header{
+    position: relative;
+    top: 13em;
   }
 
   p{
     margin: 0;
-    padding:1em 0;
+    padding:1em 1em;
     position: relative;
     top: 0em;
     letter-spacing: 8px;
   }
 
+// .content-header a{
+//   position: relative;
+//   left: 4em;
+//   top: 3em;
+//   }
+
   .pulse{
     position: relative;
-    left: 12em;
-    top: 15em;
+    left: 15em;
+    top: 34em;
     width: 100px;
     height: 100px;
     background: #ff6d4a;
@@ -188,9 +209,9 @@ nav ul li a.active{
     }
   }
 
-  #showcase .content-wrap, #section-a .content-wrap{
+  .content-wrap{
     padding: 0 1.5em;
-    padding-bottom: 25em;
+    padding-bottom: 19em;
 
 }
 
@@ -278,9 +299,16 @@ nav ul li a.active{
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
 
+  #h1-header{
+    top: 8em;
+  }
+  #p-header{
+    top: 16em;
+  }
+
   .pulse{
-    left: 34em;
-    top: 27em;
+    left: 36em;
+    top: 56em;
   }
 
   #section-a {
@@ -288,6 +316,7 @@ nav ul li a.active{
       columns: 2;
       column-gap: 2em;
     }
+
     p{
       padding-top: 0;
     }
@@ -298,7 +327,6 @@ nav ul li a.active{
   #section-b ul{
     grid-column: 2/4;
     position: relative;
-    top: 17em;
   }
   .box, #main-footer div{
     grid-column: span 2;

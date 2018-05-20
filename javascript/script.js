@@ -18,3 +18,18 @@ $(document).ready(function(){function menu(){
 }
 menu();
 });
+
+
+// .content-wrap{
+//   h1{
+//     top: 8em;
+//   }
+//   p{
+//     top: 16em;
+//   }
+//   a{
+//     position: relative;
+//     left: 0em;
+//     top: 16em;
+//   }
+// }
