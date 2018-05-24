@@ -14,6 +14,9 @@
   <link rel="shortcut icon" href="/8f80f5ba.favicon.ico">
   <title>Clint Cloete - Curriculum Vitae - Front End Web Developer</title>
   <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
 
   <!-- FONT -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
@@ -21,94 +24,102 @@
 </head>
 
 <body>
-
-  <!-- NAVBAR -->
-
+  <!-- NAV -->
+  <nav class="navs">
+    <ul>
+      <li> <a href="#section-a" class="smoothScroll">Intro</a></li>
+      <li> <a href="#section-b" class="smoothScroll">Portfolio</a></li>
+      <li> <a href="#section-c" class="smoothScroll">Experience</a></li>
+      <li> <a href="#main-footer" class="smoothScroll">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- HEADER -->
   <header id="showcase" class="grid">
-
-      <nav class="navs">
-        <ul>
-          <li> <a href="#section-a" class="smoothScroll">Intro</a></li>
-          <li> <a href="#section-b" class="smoothScroll">Portfolio</a></li>
-          <li> <a href="#section-c" class="smoothScroll">Experience</a></li>
-          <li> <a href="#main-footer" class="smoothScroll">Contact</a></li>
-          <!--NOTE!! put this in section D -->
-          <!-- <li> <a class="active" href="#">Download</a></li> -->
-        </ul>
-      </nav>
-
-    <!-- div to attached opacity, bg-img and properties -->
     <div class="bg-image"></div>
-
-      <div class="content-wrap">
-        <h1 id="h1-header" style="background-color: #0000004d;">HELLO, I'M CLINT</h1>
-        <p id="p-header">AN ASPIRING WEB DEVELOPER</p>
-
-      <!-- Animation button -->
-
-        <a href="#section-a" style="text-decoration:none;"><div class="pulse">Scroll down</div></a>
-      </div>
-
+    <h1 id="intro-title" style="background-color: #0000004d;">HELLO, I'M CLINT</h1>
+    <p id="intro-para">WEB DEVELOPER</p>
+    <div id="box-pulse">
+      <a href="#section-a"><div id="pulse">SCROLL DOWN</div></a>
+    </div>
 
   </header>
 
-  <!-- MAIN AREA -->
+  <!-- MAIN -->
   <main id="main">
-    <!-- Section A -->
+    <!--section A-->
     <section id="section-a" class="grid">
       <div class="content-wrap">
-        <h2 class="content-title">Who am I</h2>
+        <h2 class="content-title">HI THERE</h2>
         <div class="content-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>I am a GIS Tech turned Web Developer. I have a keen interest in ArcGIS for Developers and teaching myself Python code. My days now consist of one cup of good coffee and focusing on building my web portfolio.</p>
         </div>
       </div>
     </section>
 
-    <!-- Section B -->
+    <!--section B-->
     <section id="section-b" class="grid">
-      <ul>
-        <li>
-          <div class="card">
-            <img src="img/road.jpg" alt="">
-            <div class="card-content">
-              <h3 class="card-title">lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="content-wrap">
+        <h1 class="content-title">PORTFOLIO</h1>
+        <ul>
+          <li>
+            <div class="card">
+              <img src="img/background_reg.jpg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">Rebuild of Jon Chretien Website</h3>
+                <p>Recreate the site as closely as possible to the original using my own html and css.</p>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <img src="img/road.jpg" alt="">
-            <div class="card-content">
-              <h3 class="card-title">lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </li>
+          <li>
+            <div class="card">
+              <img src="img/groupwhyte.jpeg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">Create a quiz</h3>
+                <p>Created a quiz using javascript functions, loops and arrays.</p>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <img src="img/road.jpg" alt="">
-            <div class="card-content">
-              <h3 class="card-title">lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </li>
+          <li>
+            <div class="card">
+              <img src="img/jonsnow.png" alt="">
+              <div class="card-content">
+                <h3 class="card-title">Create a blog</h3>
+                <p>Created a fucntional blog using Jquery, JSON mock server and AJAX.</p>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
+
 
     </section>
 
-    <!-- Section C -->
+    <!--section-c-->
     <section id="section-c" class="grid">
       <div class="content-wrap">
         <h2 class="content-title">Experience</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </section>
+    <!--section-carousel-->
+    <section id="carousel" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Skills</h2>
+        <div class="owl-carousel">
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+        </div>
 
-    <!-- Section D -->
+      </div>
+    </section>
+
+    <!--section-d-->
     <section id="section-d" class="grid">
       <div class="box">
         <h2 class="content-title">Stalk Me</h2>
@@ -116,11 +127,12 @@
         <p>clintedward86@icloud.com</p>
       </div>
       <div class="box">
-        <h2 class="content-title">Stalk Me</h2>
+        <h2 class="content-title">Contact Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>clintedward86@icloud.com</p>
       </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -129,6 +141,9 @@
     <div>See my projects <a href="#" target="_blank">github</a> </div>
   </footer>
 
+
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
   <script src="javascript/smoothscroll.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript">

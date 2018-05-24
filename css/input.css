@@ -1,4 +1,4 @@
-/*CORE STYLE*/
+/* CORE STYLES */
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
@@ -7,144 +7,32 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center; }
-
-/*this setting fits images into the block*/
-img {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-h1, h2, h3 {
-  margin: 0;
-  padding: 1em; }
-
-.btn {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  padding: 1em 2em;
-  border: 1px solid #666;
-  margin: .5em 0; }
-
-.btn:hover {
-  background: #eaeaea;
-  color: #333; }
-
-/*NAVBAR*/
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  padding: 10px 100px;
-  box-sizing: border-box;
-  transition: .3s;
-  z-index: 1; }
-
-nav.black {
-  background: rgba(0, 0, 0, 0.9);
-  height: 100px;
-  padding: 10px 100px; }
-
-nav .logo {
-  padding: 22px 20px;
-  height: 80px;
-  float: left;
-  font-size: 24px;
-  transition: .3s; }
-
-nav.black .logo {
-  color: #fff; }
-
-nav ul {
-  list-style: none;
-  float: right;
-  margin: 0;
-  padding: 0;
-  display: flex; }
-
-nav ul li {
-  list-style: none; }
-
-nav ul li a {
-  line-height: 80px;
-  color: #c3c3c3;
-  padding: 12px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: .3s; }
-
-nav.black ul li a {
-  color: #fff; }
-
-nav ul li a:focus {
-  outline: none; }
-
-nav ul li a.active {
-  background: #E2472F;
-  color: #fff;
-  border-radius: 6px; }
-
-#showcase {
-  min-height: 47em;
-  color: #fff;
-  text-align: center; }
-
-#showcase .bg-image {
-  position: absolute;
-  background: #333 url("../img/drkmountain.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 47em;
-  z-index: -1;
-  opacity: 0.7; }
-
-h1 {
-  position: relative;
-  padding-top: 0px;
-  top: 5em;
-  letter-spacing: 30px; }
-
-#h1-header {
-  position: relative;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  top: 7em;
-  letter-spacing: 30px; }
-
-#p-header {
-  position: relative;
-  top: 13em; }
-
-p {
-  margin: 0;
-  padding: 1em 1em;
-  position: relative;
-  top: 0em;
-  letter-spacing: 8px; }
-
-.pulse {
-  position: relative;
-  left: 15em;
-  top: 34em;
-  width: 100px;
-  height: 100px;
-  background: #ff6d4a;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 10px;
-  text-align: center;
-  line-height: 100px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  animation: animate 3s linear infinite; }
-
+  body h1, body h2, body h3 {
+    margin: 0;
+    padding: 1em 0; }
+  body #intro-title {
+    position: relative;
+    top: 8em; }
+  body #intro-para {
+    position: relative;
+    top: 13em; }
+  body a {
+    text-decoration: none; }
+  body #pulse {
+    position: relative;
+    display: inline-block;
+    top: 50em;
+    width: 100px;
+    height: 100px;
+    background: #ff6d4a;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    animation: animate 3s linear infinite; }
 @keyframes animate {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 109, 74, 0.7), 0 0 0 0 rgba(255, 109, 74, 0.7); }
@@ -154,90 +42,146 @@ p {
     box-shadow: 0 0 0 30px rgba(255, 109, 74, 0), 0 0 0 20px rgba(255, 109, 74, 0); }
   100% {
     box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 20px rgba(255, 109, 74, 0); } }
-.content-wrap {
-  padding: 0 1.5em;
-  padding-bottom: 19em; }
-
-/*PULSE ANIMATION*/
-/*SECTION A*/
-#section-a {
-  background: #eaeaea;
-  color: #333;
-  padding-bottom: 2em; }
-
-/*SECTION B*/
-#section-b {
-  padding: 2em 1em 1em; }
-
-#section-b ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-#section-b li {
-  margin-bottom: 1em;
-  background: #fff;
-  color: #333; }
-
-.card-content {
-  padding: 1.5em; }
-
-/*SECTION C*/
-#section-c {
-  background: #fff;
-  color: #333;
-  padding: 2em; }
-
-/*SECTION D/BOXES*/
-#section-d .box {
-  padding: 2em;
-  color: #fff; }
-
-#section-d .box:first-child {
-  background: #2690d4; }
-
-/*FOOTER*/
-#main-footer {
-  padding: 2em;
-  background: #000;
-  color: #fff;
-  text-align: center; }
-
-#main-footer a {
-  color: #2690d4;
-  text-decoration: none; }
-
-/*MEDIA QUERY*/
-@media (min-width: 700px) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
-
-  #h1-header {
-    top: 8em; }
-
-  #p-header {
-    top: 16em; }
-
-  .pulse {
-    left: 36em;
-    top: 56em; }
-
-  #section-a .content.text {
-    columns: 2;
-    column-gap: 2em; }
-  #section-a p {
-    padding-top: 0; }
-
-  .content-wrap,
-  #section-b ul {
-    grid-column: 2/4;
-    position: relative; }
-
-  .box, #main-footer div {
-    grid-column: span 2;
-    column-gap: 2em; }
-
-  #section-b ul {
-    display: flex; } }
+  body img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  body #showcase {
+    min-height: 54em;
+    color: #fff;
+    text-align: center; }
+    body #showcase .bg-image {
+      position: absolute;
+      background: #333 url("../img/drkmountain.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 54em;
+      z-index: -1; }
+  body #section-a, body .content-wrap {
+    background: #f5f5f5;
+    color: #333;
+    padding: 0 1.5em 1.5em; }
+  body #section-b {
+    padding: 2em 1em 1em; }
+    body #section-b ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      body #section-b ul li {
+        margin-bottom: 1em;
+        background: #fff;
+        color: #333; }
+        body #section-b ul li .card-content {
+          padding: 1.5em; }
+  body #section-c {
+    background: #fff;
+    color: #333;
+    padding: 3em; }
+  body #carousel {
+    background: #fff;
+    color: #333;
+    padding: 3em; }
+  body #section-d .box {
+    padding: 2em;
+    color: #fff; }
+  body #section-d .box:first-child {
+    background: #ff6d4a; }
+  body #main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center; }
+    body #main-footer a {
+      color: #2690d4;
+      text-decoration: none; }
+  @media (max-width: 700px) {
+    body nav {
+      display: none; } }
+  @media (min-width: 700px) {
+    body nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      padding: 10px 100px;
+      box-sizing: border-box;
+      transition: .3s;
+      z-index: 1; }
+    body nav.black {
+      background: rgba(0, 0, 0, 0.9);
+      height: 100px;
+      padding: 10px 100px; }
+    body nav .logo {
+      padding: 22px 20px;
+      height: 80px;
+      float: left;
+      font-size: 24px;
+      transition: .3s; }
+    body nav.black .logo {
+      color: #fff; }
+    body nav ul {
+      list-style: none;
+      float: right;
+      margin: 0;
+      padding: 0;
+      display: flex; }
+    body nav ul li {
+      list-style: none; }
+    body nav ul li a {
+      line-height: 80px;
+      color: #c3c3c3;
+      padding: 12px 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: .3s; }
+    body nav.black ul li a {
+      color: #fff; }
+    body nav ul li a:focus {
+      outline: none; }
+    body nav ul li a.active {
+      background: #E2472F;
+      color: #fff;
+      border-radius: 6px; }
+    body #intro-title {
+      position: relative;
+      top: 10em;
+      grid-row: 1/2;
+      grid-column: 2/4;
+      letter-spacing: 30px;
+      height: 43px;
+      padding-top: 2px;
+      padding-bottom: 12px; }
+    body #intro-para {
+      position: relative;
+      height: 48px;
+      grid-row: 1/2;
+      grid-column: 2/4;
+      letter-spacing: 10px;
+      font-size: 32px; }
+    body #box-pulse {
+      position: relative;
+      grid-row: 4/5;
+      grid-column: 2/4;
+      bottom: 23em; }
+    body .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
+      body .grid #section-a .content-text {
+        columns: 2;
+        column-gap: 2em; }
+        body .grid #section-a .content-text p {
+          padding-top: 0; }
+    body .content-wrap, body #section-b ul {
+      grid-column: 2/4; }
+    body #section-b ul {
+      display: flex;
+      justify-content: space-around; }
+      body #section-b ul li {
+        width: 31%; }
+    body .box, body #main-footer div {
+      grid-column: span 2; } }
 
 /*# sourceMappingURL=input.css.map */
