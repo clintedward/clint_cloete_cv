@@ -177,7 +177,9 @@ body {
         column-gap: 2em; }
         body .grid #section-a .content-text p {
           padding-top: 0; }
-    body .content-wrap, body #section-b ul {
+    body #portfolio-grid {
+      display: grid; }
+    body .content-wrap, body #portfolio-wrap, body #section-b ul {
       grid-column: 2/4; }
     body #section-b ul {
       display: flex;
