@@ -83,6 +83,8 @@ body {
     padding: 3em; }
   body .owl-item {
     display: inline-block; }
+  body .font-icon {
+    font-size: 100px; }
   body #section-d .box {
     padding: 0em;
     color: #fff;
