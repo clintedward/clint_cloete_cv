@@ -126,17 +126,20 @@ body{
     }
 
     //carousel
-    // .owl-carousel{
-    //   max-width: 100%;
-    //   height: 100%;
-    //   display: block;
-    // }
+    
+    .owl-item{
+      display: inline-block;
+    }
+      
+    
+    
 
     //SECTION D
     #section-d{
       .box{
-        padding: 2em;
+        padding: 0em;
         color: $secondary-color;
+        background: #ff6d4a;
       }
       .box:first-child{
         background: #ff6d4a;
@@ -165,11 +168,11 @@ body{
     @media(min-width: 700px){
 
     
-      .carousel {
-        max-width: 100%;
-        height: 100%;
-        display: inline;
-      }
+      // .carousel {
+      //   max-width: 100%;
+      //   height: 100%;
+      //   display: inline;
+      // }
 //NATE
       // #nav{
       //   margin-top: 1em;

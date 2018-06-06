@@ -81,9 +81,12 @@ body {
     background: #fff;
     color: #333;
     padding: 3em; }
+  body .owl-item {
+    display: inline-block; }
   body #section-d .box {
-    padding: 2em;
-    color: #fff; }
+    padding: 0em;
+    color: #fff;
+    background: #ff6d4a; }
   body #section-d .box:first-child {
     background: #ff6d4a; }
   body #main-footer {
@@ -98,10 +101,6 @@ body {
     body nav {
       display: none; } }
   @media (min-width: 700px) {
-    body .carousel {
-      max-width: 100%;
-      height: 100%;
-      display: inline; }
     body nav {
       position: fixed;
       top: 0;
