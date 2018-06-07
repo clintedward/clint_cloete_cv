@@ -61,23 +61,23 @@ body {
       width: 100%;
       height: 54em;
       z-index: -1; }
-  body #section-a, body .content-wrap {
+  body #intro, body .content-wrap {
     background: #f5f5f5;
     color: #333;
     padding: 0 1.5em 1.5em; }
-  body #section-b {
+  body #portfolio {
     padding: 2em 1em 1em; }
-    body #section-b ul {
+    body #portfolio ul {
       list-style: none;
       margin: 0;
       padding: 0; }
-      body #section-b ul li {
+      body #portfolio ul li {
         margin-bottom: 1em;
         background: #fff;
         color: #333; }
-        body #section-b ul li .card-content {
+        body #portfolio ul li .card-content {
           padding: 1.5em; }
-  body #section-c {
+  body #experience {
     background: #fff;
     color: #333;
     padding: 3em; }
@@ -85,20 +85,24 @@ body {
     display: inline-block; }
   body .font-icon {
     font-size: 100px; }
-  body #section-d .box {
+  body .owl-carousel .owl-nav button.owl-next,
+  body .owl-carousel .owl-nav button.owl-prev,
+  body .owl-carousel button.owl-dot {
+    font-size: 90px; }
+  body #contact .box {
     padding: 0em;
     color: #fff;
     background: #ff6d4a; }
-  body #section-d .box:first-child {
+  body #contact .box:first-child {
     background: #ff6d4a; }
-  body #main-footer {
-    padding: 2em;
-    background: #000;
-    color: #fff;
-    text-align: center; }
-    body #main-footer a {
-      color: #2690d4;
-      text-decoration: none; }
+  body #contact .icon {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 40px; }
+    body #contact .icon .fa-cloud-download-alt,
+    body #contact .icon .fa-envelope,
+    body #contact .icon .fa-linkedin {
+      color: white; }
   @media (max-width: 700px) {
     body nav {
       display: none; } }
@@ -173,21 +177,29 @@ body {
     body .grid {
       display: grid;
       grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
-      body .grid #section-a .content-text {
+      body .grid #intro .content-text {
         columns: 2;
         column-gap: 2em; }
-        body .grid #section-a .content-text p {
+        body .grid #intro .content-text p {
           padding-top: 0; }
     body #portfolio-grid {
       display: grid; }
-    body .content-wrap, body #portfolio-wrap, body #section-b ul {
+    body .content-wrap, body #portfolio-wrap, body #portfolio ul {
       grid-column: 2/4; }
-    body #section-b ul {
+    body #portfolio ul {
       display: flex;
       justify-content: space-around; }
-      body #section-b ul li {
+      body #portfolio ul li {
         width: 31%; }
     body .box, body #main-footer div {
       grid-column: span 2; } }
+  body .icon {
+    margin: auto;
+    width: 60%;
+    padding: 70px 0; }
+    body .icon .fa-cloud-download-alt,
+    body .icon .fa-envelope,
+    body .icon .fa-linkedin {
+      color: white; }
 
 /*# sourceMappingURL=input.css.map */
