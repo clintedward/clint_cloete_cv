@@ -54,7 +54,7 @@ body {
     text-align: center; }
     body #showcase .bg-image {
       position: absolute;
-      background: #333 url("../img/drkmountain.jpg");
+      background: #333 url("../img/drkmountaincomp.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
