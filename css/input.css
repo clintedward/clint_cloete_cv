@@ -5,7 +5,6 @@ body {
   background: #333;
   color: #fff;
   font-size: 1.1em;
-  line-height: 1.5;
   text-align: center; }
   body h1, body h2, body h3 {
     margin: 0;
@@ -195,7 +194,7 @@ body {
       grid-column: span 2; } }
   body .icon {
     margin: auto;
-    width: 60%;
+    width: 30%;
     padding: 70px 0; }
     body .icon .fa-cloud-download-alt,
     body .icon .fa-envelope,
