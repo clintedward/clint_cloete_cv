@@ -70,10 +70,10 @@ body{
 
 
     //card image
-    img{
+    #portfolio img{
       display: block;
       width: 100%;
-      height: auto;
+      height: 15em;
     }
 
     //HEADER
@@ -148,6 +148,9 @@ body{
         padding: 0em;
         color: $secondary-color;
         background: #ff6d4a;
+        img{
+          width: 100%;
+        }
       }
      
       .box:first-child{
@@ -166,6 +169,8 @@ body{
         .fa-linkedin {
           color: white;
         }
+       
+        
       }
       
     }
@@ -364,6 +369,7 @@ body{
       margin: auto;
       width: 30%;
       padding: 70px 0;
+      text-align: left;
       
       
       .fa-cloud-download-alt,
