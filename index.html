@@ -84,8 +84,8 @@
             <div class="card">
               <img src="img/weatherpic3.jpg" alt="">
               <div class="card-content">
-                <a href="https://clintedward.github.io/weather-app/" target="_blank">React API Weather App</a>
-                 
+                <a href="https://clintedward.github.io/myweatherapp/" target="_blank">React API Weather App</a>
+
                 <h3 class="card-title"></h3>
                 <p>A React application that fetches data from a weather API</p>
               </div>
@@ -104,11 +104,11 @@
           </li>
           <li>
             <div class="card">
-              <img src="img/Untitled 2.png" alt="">
+              <img src="img/Untitled2.png" alt="">
               <div class="card-content">
                 <h3 class="card-title"></h3>
                 <a href="https://clintedward.github.io/flex-panel-gallery/index.html" target="_blank">Flex Panels Image Gallery</a>
-                 
+
                 <p>Using html, css and javascript to create a fun flex gallery</p>
               </div>
             </div>
@@ -119,7 +119,7 @@
 
     </section>
 
-    <!--introc-->
+    <!--intro-->
     <section id="experience" class="grid">
       <div id="portfolio-wrap">
         <h2 class="content-title">Experience</h2>
@@ -197,7 +197,7 @@
 
     <!--contact-->
     <section id="contact" class="grid">
-      
+
       <div class="box">
         <img src="../img/helpinghand.jpg" alt="code help" srcset="">
       </div>
@@ -205,27 +205,35 @@
       <div class="box">
         <div class="icon">
           <h2 class="content-title">Contact me</h2>
-          <a href="https://www.linkedin.com/in/clint-edward-cloete-685004108/" target="_blank"><i class="fab fa-linkedin fa-2x"></a></i> Find me on LinkedIn 
+          <a href="https://www.linkedin.com/in/clint-edward-cloete-685004108/" target="_blank">
+            <i class="fab fa-linkedin fa-2x">
+          </a>
+          </i> Find me on LinkedIn
           <br>
           <br>
-          <a href="mailto:clintedward86@icloud.com"><i class="far fa-envelope fa-2x"></a></i>   Email  me  
+          <a href="mailto:clintedward86@icloud.com">
+            <i class="far fa-envelope fa-2x">
+          </a>
+          </i> Email me
           <br>
           <br>
-          <a href="https://drive.google.com/open?id=1O8Fwl9SIftJ45yACsav4DqdEqcJiwCbq" target="_blank"><i class="fas fa-cloud-download-alt fa-2x"></i></a> Download my CV 
+          <a href="https://drive.google.com/open?id=1O8Fwl9SIftJ45yACsav4DqdEqcJiwCbq" target="_blank">
+            <i class="fas fa-cloud-download-alt fa-2x"></i>
+          </a> Download my CV
           <br>
           <br>
           <i class="fas fa-mobile-alt fa-2x"></i> 061 476 5122
         </div>
-        
+
 
       </div>
     </section>
 
   </main>
 
-  
 
 
+  <script src="javascript/smoothscroll.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
@@ -234,7 +242,7 @@
   <script src="javascript/owl.carousel.min.js"></script>
 
 
-  <script src="javascript/smoothscroll.js"></script>
+
 
 
   <script type="text/javascript">
@@ -274,20 +282,20 @@
     });
 
     var owl = $('.owl-carousel');
-      owl.owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true
-      });
-      $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [1000])
-      })
-      $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-      })
+    owl.owlCarousel({
+      items: 4,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true
+    });
+    $('.play').on('click', function () {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function () {
+      owl.trigger('stop.owl.autoplay')
+    })
   </script>
 </body>
 
